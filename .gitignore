@@ -1,3 +1,7 @@
+# PowerPoint
+*.pptx
+*.ppt
+
 # Logs
 logs
 *.log
