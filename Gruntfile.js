@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+    // https://www.npmjs.com/package/grunt-available-tasks
     grunt.initConfig({
         availabletasks: {           // task 
             tasks: {}               // target 

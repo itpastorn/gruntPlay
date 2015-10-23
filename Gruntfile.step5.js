@@ -1,4 +1,10 @@
 module.exports = function(grunt) {
+    // https://www.npmjs.com/package/grunt-available-tasks
+    grunt.initConfig({
+        availabletasks: {           // task 
+            tasks: {}               // target 
+        }
+    });
     grunt.registerTask('default', ['greet:Lars', 'addNum:7:2']);
     grunt.registerTask('greet', function(name) {
         grunt.log.writeln("Hejsan " + name);
@@ -13,5 +19,6 @@ module.exports = function(grunt) {
             grunt.log.writeln(n1 + " + " + n2 + " = " + answer)
         }
     });
+    grunt.loadNpmTasks('grunt-available-tasks');
 }
 
