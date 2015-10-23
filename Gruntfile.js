@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     grunt.registerTask('greet', function(name) {
         grunt.log.writeln("Hejsan " + name);
     });
-    grunt.registerTask('addNum', function(n1, n2) {
+    grunt.registerTask('addNum', 'Add 2 numbers', function(n1, n2) {
         n1 = Number(n1);
         n2 = Number(n2);
         if (isNaN(n1) || isNaN(n2)) {
