@@ -8,7 +8,8 @@ module.exports = function(grunt) {
                 processors: [
                     require('autoprefixer')({
                         browsers: ['> 0.5%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1']
-                    })
+                    }),
+                    require('cssnano')
                 ]
             },
             dist: {
@@ -18,9 +19,16 @@ module.exports = function(grunt) {
                     dest: 'fixed/'
                 }]
             }
+        }, // postcss
+        watch: {
+            styles: {
+                files: ['*.css'],
+                tasks: ['postcss']
+            }
         }
+        
     });
 
-    grunt.registerTask('default', ['postcss:dist']);
+    // grunt.registerTask('default', ['watch']);
 };
 

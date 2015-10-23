@@ -1,8 +1,1 @@
-html {
-    background: -webkit-linear-gradient(135deg, blue, yellow) no-repeat;
-    background: linear-gradient( -45deg, blue, yellow ) no-repeat;
-}
-body {
-    height: 100vh;
-}
-
+html{background:-webkit-linear-gradient(135deg,blue,#ff0) no-repeat;background:linear-gradient(-45deg,blue,#ff0) no-repeat}body{height:100vh;margin:auto;border:1px solid #000;border-radius:10px}
